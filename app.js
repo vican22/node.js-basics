@@ -35,7 +35,7 @@ const server = http.createServer((req, res) => {
       const message = parseBody.split("=")[1];
       console.log(message);
       res.statusCode = 302;
-      res.setHeader("Location", "/username");
+      res.setHeader("Location", "/");
       res.end();
     });
   }
